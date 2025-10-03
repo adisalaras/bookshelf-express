@@ -12,6 +12,7 @@ exports.bookList = async (req, res, next) => {
     next(error);
   }
 };
+
 exports.bookDetail = async (req, res, next) => {
   try {
     const data = await service.bookDetail(req);
@@ -24,11 +25,12 @@ exports.bookDetail = async (req, res, next) => {
     next(error);
   }
 };
+
 exports.createBook = async (req, res, next) => {
   try {
     const data = await service.createBook(req);
     const result = {
-      message: 'Data Loaded',
+      message: 'Data added successfully ',
       data,
     };
     res.status(200).json(result);
@@ -36,11 +38,25 @@ exports.createBook = async (req, res, next) => {
     next(error);
   }
 };
+
 exports.updateBook = async (req, res, next) => {
   try {
     const data = await service.updateBook(req);
     const result = {
-      message: 'Data Loaded',
+      message: 'Data updated successfully',
+      data,
+    };
+    res.status(200).json(result);
+  } catch (error) {
+    next(error);
+  }
+};
+
+exports.bookDestroy = async (req, res, next) => {
+  try {
+    const data = await service.bookDestroy(req);
+    const result = {
+      message: 'Data deleted succesfully',
       data,
     };
     res.status(200).json(result);

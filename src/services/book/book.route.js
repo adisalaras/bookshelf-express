@@ -10,16 +10,29 @@ router
   .get(
     controller.bookList,
   );
+
 router
-  .route('/create')
+  .route('/:bookId')
+  .get(
+    controller.bookDetail,
+  );
+
+router
+  .route('/:bookId')
+  .delete(
+    controller.bookDestroy,
+  );
+
+router
+  .route('/')
   .post(
     validate(createBook.body),
     controller.createBook,
   );
 
 router
-  .route('/update/:bookId')
-  .post(
+  .route('/:bookId')
+  .put(
     validate(updateBook.body),
     controller.updateBook,
   );

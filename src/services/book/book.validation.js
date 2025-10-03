@@ -8,6 +8,10 @@ module.exports = {
       year: Joi.number().required(),
       summary: Joi.string().required(),
       publisher: Joi.string().required(),
+      pageCount: Joi.number().required(),
+      readPage: Joi.number(),
+      reading: Joi.boolean(),
+      finished: Joi.boolean(),
     }),
   },
   updateBook: {
@@ -17,6 +21,10 @@ module.exports = {
       year: Joi.number(),
       summary: Joi.string(),
       publisher: Joi.string(),
+      pageCount: Joi.number(),
+      readPage: Joi.number(),
+      reading: Joi.boolean(),
+      finished: Joi.boolean(),
     }),
   },
 };
