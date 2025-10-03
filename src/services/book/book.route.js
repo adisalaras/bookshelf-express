@@ -6,12 +6,17 @@ const { createBook, updateBook } = require('./book.validation');
 const router = express.Router();
 
 router
+  .route('/')
+  .get(
+    controller.bookList,
+  );
+router
   .route('/create')
   .post(
     validate(createBook.body),
     controller.createBook,
   );
-  
+
 router
   .route('/update/:bookId')
   .post(
