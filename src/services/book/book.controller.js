@@ -4,6 +4,7 @@ exports.bookList = async (req, res, next) => {
   try {
     const data = await service.bookList(req);
     const result = {
+      status: 'success',
       message: 'Data Loaded',
       data,
     };
@@ -15,10 +16,13 @@ exports.bookList = async (req, res, next) => {
 
 exports.bookDetail = async (req, res, next) => {
   try {
-    const data = await service.bookDetail(req);
+    const book = await service.bookDetail(req);
     const result = {
+      status: 'success',
       message: 'Data Loaded',
-      data,
+      data: {
+        book,
+      },
     };
     res.status(200).json(result);
   } catch (error) {
@@ -30,10 +34,11 @@ exports.createBook = async (req, res, next) => {
   try {
     const data = await service.createBook(req);
     const result = {
-      message: 'Data added successfully ',
+      status: 'success',
+      message: 'Buku berhasil ditambahkan ',
       data,
     };
-    res.status(200).json(result);
+    res.status(201).json(result);
   } catch (error) {
     next(error);
   }
@@ -43,7 +48,8 @@ exports.updateBook = async (req, res, next) => {
   try {
     const data = await service.updateBook(req);
     const result = {
-      message: 'Data updated successfully',
+      status: 'success',
+      message: 'Buku berhasil diperbarui',
       data,
     };
     res.status(200).json(result);
@@ -56,7 +62,8 @@ exports.bookDestroy = async (req, res, next) => {
   try {
     const data = await service.bookDestroy(req);
     const result = {
-      message: 'Data deleted succesfully',
+      status: 'success',
+      message: 'Buku berhasil dihapus',
       data,
     };
     res.status(200).json(result);

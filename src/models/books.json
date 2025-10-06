@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1759725316803",
+    "bookId": "1759725316803",
+    "name": "Layangannnn",
+    "author": "laras",
+    "year": 2005,
+    "summary": "Buku ini berisi tentang perjalanan layangan menjadi superman",
+    "publisher": "rumah buku",
+    "pageCount": 50,
+    "readPage": 28,
+    "reading": false,
+    "finished": false,
+    "insertedAt": "2025-10-06T04:35:16.803Z",
+    "updatedAt": "2025-10-06T04:35:16.803Z"
+  },
+  {
+    "id": "1759725439957",
+    "bookId": "1759725439957",
+    "name": "Layangannnnyuu",
+    "author": "laras",
+    "year": 2005,
+    "summary": "Buku ini berisi tentang perjalanan layangan menjadi superman",
+    "publisher": "rumah buku",
+    "pageCount": 50,
+    "readPage": 28,
+    "reading": false,
+    "finished": false,
+    "insertedAt": "2025-10-06T04:37:19.957Z",
+    "updatedAt": "2025-10-06T04:37:54.767Z"
+  },
+  {
+    "id": "1759725507349",
+    "bookId": "1759725507349",
+    "name": "Layangan putus",
+    "author": "laras",
+    "year": 2005,
+    "summary": "Buku ini berisi tentang perjalanan layangan menjadi superman",
+    "publisher": "rumah buku",
+    "pageCount": 500,
+    "readPage": 38,
+    "reading": false,
+    "finished": false,
+    "insertedAt": "2025-10-06T04:38:27.349Z",
+    "updatedAt": "2025-10-06T04:38:27.349Z"
+  },
+  {
+    "id": "1759732350488",
+    "bookId": "1759732350488",
+    "name": "Layangan putus nyambung",
+    "author": "laras",
+    "year": 2005,
+    "summary": "Buku ini berisi tentang perjalanan layangan menjadi superman",
+    "publisher": "rumah buku",
+    "pageCount": 500,
+    "readPage": 38,
+    "reading": true,
+    "finished": true,
+    "insertedAt": "2025-10-06T06:32:30.488Z",
+    "updatedAt": "2025-10-06T06:32:30.488Z"
+  }
+]

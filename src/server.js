@@ -1,5 +1,4 @@
 const express = require('express');
-require('./db');
 const bookRoutes = require('./services/book/book.route');
 const errorHandler = require('./middleware/error-handler');
 
